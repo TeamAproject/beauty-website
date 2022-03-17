@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Stencil Std","Sitka Heading","Lucida Bright","Script MT", sans-serif;
+  line-height: 1.9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(197, 124, 60, 0.6)), to(rgba(204, 138, 87, 0.8))), url("../img/background.png");
+  background-image: linear-gradient(to bottom, rgba(197, 124, 60, 0.6), rgba(204, 138, 87, 0.8)), url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  background-color: rgba(204, 138, 87, 0.8);
+  border: none;
+  height: 56rem;
+  margin: 5rem 10rem;
+  border-radius: 2rem;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+}
+
+.nav__logo {
+  font-size: calc(1.5rem + 2vw);
+}
+
+.nav__line {
+  width: 60%;
+  height: 0.2rem;
+  background-color: #fff;
+}
+
+.nav__dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__dot--circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+.nav__star {
+  width: 2rem;
+  height: 3rem;
+}
+
+.nav__menu {
+  font-size: calc(1.2rem + 0.5vw);
+  cursor: pointer;
+}
+
+.nav__menu-item {
+  display: none;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+}
+
+.content__left {
+  margin-left: 5rem;
+}
+
+.content__left--1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.content__left--1__arrow {
+  margin-right: .3rem;
+}
+
+.content__left--1__arrow {
+  font-size: 3rem;
+}
+
+.content__left__content__heading1 {
+  font-size: calc(1.2rem + 0.5vw);
+  font-family: "Sitka Heading";
+  text-transform: capitalize;
+}
+
+.content__left__content__heading {
+  margin-top: -5rem;
+}
+
+.content__left__content__heading--1 {
+  display: block;
+  font-size: calc(1.5rem + 5vw);
+  font-family: "Sitka Heading";
+}
+
+.content__left__content__heading--2 {
+  line-height: 0.1rem;
+  font-size: calc(1.5rem + 5vw);
+  font-family: "Sitka Heading";
+}
+
+.content__left__para {
+  margin-top: 2rem;
+  font-size: calc(1.2rem + 0.5vw);
+  font-family: "Sitka Heading";
+}
+
+.content__left--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.content__left--btn-1 {
+  padding: 1rem 5rem;
+  border-radius: 5rem;
+  background-color: transparent;
+  border: 1px solid blueviolet;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content__left--btn-2 {
+  margin: 1rem 0 0 5rem;
+  cursor: pointer;
+}
+
+.content__left__follow {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: "Segoe Script";
+}
+
+.content__left__follow--down {
+  font-size: 2rem;
+}
+
+.content__right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 6.5rem;
+}
+
+.content__right--img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scaleX(1.8);
+          transform: scaleX(1.8);
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.content__right--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.content__right--social__img {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: .5rem;
+}
+
+.content__right--social__link {
+  -webkit-transform: rotateZ(272deg);
+          transform: rotateZ(272deg);
+  margin: 3rem -2rem;
+  color: #000;
+  text-shadow: 1rem 1rem 2rem #3b2020;
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+/*# sourceMappingURL=main-style.css.map */
